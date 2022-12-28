@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="stylesheet" href="../css/loginRegister.css">
+    <script src="../js/logo.js" defer></script>
+    <script src="../js/loginRegister.js" defer></script>
+    <title>Вход</title>
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="siteTitle" id="siteTitle"><span class="blueText">E</span>asy<span class="purpleText">G</span>raph
+        </h2>
+        <ul class="headerFooterList">
+            <li class="headerFooterList_item"><a href="../index.html" class="headerFooterList_link">Главная</a></li>
+            <li class="headerFooterList_item"><a href="contacts.html" class="headerFooterList_link">Контакты</a>
+            </li>
+            <li class="headerFooterList_item"><a href="aboutUs.html" class="headerFooterList_link">О нас</a></li>
+            <li class="headerFooterList_item"><a href="login.html" class="headerFooterList_link">Вход/Регистрация</a>
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+        <section class="loginRegister">
+            <form action="#" method="post" class="option currentOption">
+                <div class="loginRegisterWrapper">
+                    <label for="loginInLogin" class="loginRegisterLabel">Введите Ваш логин:</label>
+                    <input required type="text" name="loginInLogin" id="loginInLogin" class="loginRegisterInput">
+                </div>
+                <div class="loginRegisterWrapper">
+                    <label for="passwordInLogin" class="loginRegisterLabel labelForPass">Введите Ваш пароль:</label>
+                    <input required type="password" name="passwordInLogin" id="passwordInLogin"
+                        class="loginRegisterInput password">
+                </div>
+                <div class="confirmButtonWrapper">
+                    <button class="btn confirmBtn" type="submit">
+                        Войти
+                    </button>
+                </div>
+                <div class="otherOptionWrapper">
+                    <p class="otherOption">Ещё не зарегистрированы? <span
+                            class="otherOption_click purpleText">Регистрация</span>
+                    </p>
+                </div>
+            </form>
+
+            <form action="#" method="post" class="option alternativeOption">
+                <div class="loginRegisterWrapper">
+                    <label for="loginInRegister" class="loginRegisterLabel">Введите Ваш логин:</label>
+                    <input required type="text" name="loginInRegister" id="loginInRegister" class="loginRegisterInput">
+                </div>
+                <div class="loginRegisterWrapper">
+                    <label for="passwordInRegister" class="loginRegisterLabel labelForPass">Введите Ваш пароль:</label>
+                    <input required type="password" name="passwordInRegister" id="passwordInRegister"
+                        class="loginRegisterInput password">
+                </div>
+                <div class="loginRegisterWrapper">
+                    <label for="passwordRepeatInRegister" class="loginRegisterLabel labelForSecondPass">Повторите
+                        пароль:</label>
+                    <input required type="password" name="passwordRepeatInRegister" id="passwordRepeatInRegister"
+                        class="loginRegisterInput secondPass">
+                </div>
+                <div class="confirmButtonWrapper">
+                    <button class="btn confirmBtn" type="submit">
+                        Зарегистрироваться
+                    </button>
+                </div>
+                <div class="otherOptionWrapper">
+                    <p class="otherOption">Уже зарегистрированы? <span class="otherOption_click purpleText">Войти</span>
+                    </p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="headerFooterList">
+            <li class="headerFooterList_item"><a href="#" class="headerFooterList_link">Поддержать нас</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

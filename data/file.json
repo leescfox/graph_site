@@ -1,0 +1,1 @@
+{"nodes":[{"name": "A", "data": "blabla"},{"name": "B", "data": "bleble"},{"name": "C", "data": "blob"}],"connections":[["A", "B"],["B","C"],["A","C"]]}

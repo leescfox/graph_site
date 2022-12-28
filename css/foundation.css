@@ -1,0 +1,95 @@
+html {
+    color: rgb(255, 255, 255);
+    background-color: rgb(231, 224, 224);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header,
+.footer {
+    display: flex;
+    background-color: rgb(114, 113, 110);
+    height: 3.6rem;
+    user-select: none;
+}
+
+.header {
+    justify-content: space-between;
+    border-bottom: 0.1rem solid rgb(0, 0, 0);
+}
+
+.siteTitle {
+    font-size: 30px;
+    line-height: 3.5rem;
+    font-weight: 700;
+}
+
+.blueText {
+    color: rgb(17, 194, 185);
+}
+
+.purpleText {
+    color: rgb(151, 73, 224);
+}
+
+.headerFooterList {
+    display: flex;
+    cursor: pointer;
+}
+
+.headerFooterList_item {
+    line-height: 3.5em;
+    border-left: 0.1rem solid rgb(0, 0, 0);
+}
+
+.headerFooterList_item:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(114, 113, 110);
+}
+
+.headerFooterList_link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0 2rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer {
+    justify-content: center;
+    border-top: 0.1rem solid rgb(0, 0, 0);
+}
+
+.footer .headerFooterList {
+    width: fit-content;
+}
+
+.footer .headerFooterList> :last-child {
+    border-right: 0.1rem solid rgb(0, 0, 0);
+}
+
+.main {
+    flex: 1;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 20px;
+}
+
+.link {
+    color: rgb(151, 73, 224);
+}
+
+.link:hover {
+    color: rgb(15, 155, 148);
+}

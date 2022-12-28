@@ -1,0 +1,178 @@
+html {
+    font-size: 10px;
+    background-color: rgb(231, 224, 224);
+    color: rgb(255, 255, 255);
+}
+
+.field_wrapper {
+    font-size: 1.6rem;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3.5rem;
+    z-index: 3;
+    border-bottom: 0.1rem solid rgb(0, 0, 0);
+}
+
+.header,
+.modal_window {
+    background-color: rgb(114, 113, 110);
+}
+
+.header_option {
+    line-height: 3.5rem;
+    padding: 0 2rem;
+    border-right: 0.1rem solid rgb(0, 0, 0);
+    cursor: pointer;
+    user-select: none;
+}
+
+.hover_active>div:hover {
+    background-color: rgb(151, 73, 224);
+}
+
+.sides_container {
+    display: flex;
+    justify-content: space-between;
+
+    min-height: 100vh;
+}
+
+.left_side,
+.right_side {
+    width: 45%;
+}
+
+.node {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 100vh;
+    background-color: rgb(17, 194, 185);
+    border: 0.2rem solid rgb(0, 0, 0);
+    min-width: 3rem;
+    width: fit-content;
+    max-width: 7rem;
+    height: 2rem;
+    padding: 1rem 2rem;
+    z-index: 4;
+}
+
+.lines_container {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.line {
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4;
+    cursor: pointer;
+}
+
+.modal_wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.modal_window {
+    width: 25rem;
+    height: 30rem;
+    border: 0.3rem solid rgb(0, 0, 0);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.download_graph_window,
+.create_node_window {
+    width: 22rem;
+    height: 22rem;
+}
+
+.line_delete_window,
+.new_field_window {
+    height: 6rem;
+    width: 25rem;
+    justify-content: flex-start;
+}
+
+.modal_input_wrapper {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal_input {
+    width: 18rem;
+    outline: none;
+    border-radius: 100vh;
+    border: 0.2rem solid rgb(0, 0, 0);
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+}
+
+.close_modal {
+    position: absolute;
+}
+
+.x_btn {
+    top: 0;
+    right: 0;
+    user-select: none;
+}
+
+.modal_option,
+.close_modal {
+    cursor: pointer;
+}
+
+.modal_option:hover,
+.x_btn:hover {
+    color: rgb(0, 0, 0);
+}
+
+.create_connection>div:hover,
+.chosen_node {
+    background-color: rgb(151, 73, 224);
+}
+
+#delete_line,
+#new_field_confirm {
+    left: 0;
+    bottom: 0;
+}
+
+#dont_delete_line,
+#new_field_decline {
+    right: 0;
+    bottom: 0;
+}
+
+.download_btn {
+    position: relative;
+}

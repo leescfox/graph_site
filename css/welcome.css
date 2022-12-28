@@ -1,0 +1,52 @@
+.main {
+    line-height: 1.5;
+}
+
+.header_1 {
+    font-size: 35px;
+    line-height: 1.5;
+}
+
+.input_button_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+#file_input {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.download_svg {
+    overflow: visible;
+    padding-right: 5px;
+    fill: #fff;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.header_2 {
+    font-size: 20px;
+    line-height: 2;
+}
+
+[class^='header_'] {
+    font-weight: 700;
+}
+
+.pre_and_description_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pre {
+    text-align: left;
+    width: min-content;
+}
+
+.xml_description {
+    text-align: left;
+}

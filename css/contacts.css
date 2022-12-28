@@ -1,0 +1,39 @@
+.sectionContact {
+    margin-bottom: 30px;
+}
+
+.kindOfLink {
+    font-size: 28px;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+.ourMail {
+    color: rgb(54, 54, 54);
+}
+
+.supportUs {
+    font-style: italic;
+}
+
+.supportTypes {
+    margin: 0 auto;
+    width: 500px;
+    text-align: left;
+}
+
+.supportType {
+    margin-top: 15px;
+    position: relative;
+}
+
+.supportType::before {
+    content: '';
+    background-image: url('../img/check.svg');
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    transform: translateY(-50%);
+}

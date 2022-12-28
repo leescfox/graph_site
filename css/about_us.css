@@ -1,0 +1,52 @@
+.section {
+  margin-bottom: 30px;
+  margin: 0 auto;
+  width: 800px;
+
+  color: black;
+  margin-top: 50px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.about_us {
+  margin-bottom: 30px;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.section p {
+  margin-bottom: 30px;
+}
+
+.section h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(151, 73, 224);
+}
+
+.list_header {
+  font-style: italic;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(151, 73, 224);
+}
+
+.tasks {
+  margin-top: 15px;
+  position: relative;
+  line-height: 10px;
+  margin-bottom: 30px;
+}
+
+.tasks::before {
+  content: "";
+  background-image: url("../img/check.svg");
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  transform: translateY(-50%);
+}

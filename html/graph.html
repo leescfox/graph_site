@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/graph_page.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <script src="../js/build_graph.js" defer></script>
+    <title>Ваш граф</title>
+</head>
+
+<body>
+    <div class="field_wrapper">
+        <header class="header hover_active">
+            <div id="header_create_node" class="header_option">Создать узел</div>
+            <div id="save_in_local" class="header_option">Сохранить граф</div>
+            <div id="download_graph" class="header_option">Скачать граф</div>
+            <div id="new_field" class="header_option">Создать новое поле</div>
+        </header>
+        <div class="sides_container">
+            <div class="left_side"></div>
+            <div class="right_side"></div>
+        </div>
+        <div class="nodes_container"></div>
+        <svg class="lines_container"></svg>
+        <div id="node_actions_modal" class="modal_wrapper">
+            <div class="node_actions_window modal_window">
+                <div class="close_modal x_btn">X&nbsp;</div>
+                <div class="modal_input_wrapper">
+                    <span class="error_msg">Редактировать название:</span>
+                    <input id="change_name" class="modal_input" type="text" placeholder="Введите название узла">
+                </div>
+                <div class="modal_input_wrapper">
+                    <span>Редактировать данные:</span>
+                    <input id="change_data" class="modal_input" type="text" placeholder="Введите данные в узел">
+                </div>
+                <div class="delete_node modal_option">Удалить узел</div>
+                <div class="new_connection modal_option">Создать новую связь</div>
+                <button id="node_actions_done" class="btn">Готово</button>
+            </div>
+        </div>
+        <div id="line_delete_modal" class="modal_wrapper">
+            <div class="line_delete_window modal_window">
+                <div class="close_modal x_btn">X&nbsp;</div>
+                <span class="modal_question">Вы хотите удалить связь?</span>
+                <button id="delete_line" class="close_modal btn">&nbsp;Да&nbsp;</button>
+                <button id="dont_delete_line" class="close_modal btn">Нет</button>
+            </div>
+        </div>
+        <div id="download_graph_modal" class="modal_wrapper">
+            <div class="download_graph_window modal_window">
+                <div class="close_modal x_btn">X&nbsp;</div>
+                <div class="modal_input_wrapper">
+                    <span class="error_msg">Введите имя файла:</span>
+                    <input id="file_name" class="modal_input" type="text" placeholder="Введите имя">
+                </div>
+                <span class="modal_question">Выберите формат</span>
+                <button id="txt" class="btn download_btn">TXT</button>
+                <button id="json" class="btn download_btn">JSON</button>
+                <button id="xml" class="btn download_btn">XML</button>
+            </div>
+        </div>
+        <div id="create_node_modal" class="modal_wrapper">
+            <div class="create_node_window modal_window">
+                <div class="close_modal x_btn">X&nbsp;</div>
+                <div class="modal_input_wrapper">
+                    <span class="error_msg">Введите название:</span>
+                    <input id="enter_name" class="modal_input" type="text" placeholder="Введите название узла">
+                </div>
+                <div class="modal_input_wrapper">
+                    <span>Введите данные:</span>
+                    <input id="enter_data" class="modal_input" type="text" placeholder="Введите данные в узел">
+                </div>
+                <button id="create_node_btn" class="btn">Создать узел</button>
+            </div>
+        </div>
+        <div id="new_field_modal" class="modal_wrapper">
+            <div class="new_field_window modal_window">
+                <div class="close_modal x_btn">X&nbsp;</div>
+                <span class="modal_question">Вы хотите создать новое поле?</span>
+                <button id="new_field_confirm" class="close_modal btn">&nbsp;Да&nbsp;</button>
+                <button id="new_field_decline" class="close_modal btn">Нет</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<graph>
+    <nodes>
+        <node>
+            <name>A</name>
+            <data>blabla</data>
+        </node>
+        <node>
+            <name>B</name>
+            <data>bleble</data>
+        </node>
+        <node>
+            <name>C</name>
+            <data>blob</data>
+        </node>
+    </nodes>
+    <connections>
+        <connection>
+            <point>A</point>
+            <point>B</point>
+        </connection>
+        <connection>
+            <point>B</point>
+            <point>C</point>
+        </connection>
+        <connection>
+            <point>A</point>
+            <point>C</point>
+        </connection>
+    </connections>
+</graph>

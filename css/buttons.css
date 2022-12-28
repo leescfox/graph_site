@@ -1,0 +1,27 @@
+.btn {
+    background-color: rgb(151, 73, 224);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    width: fit-content;
+    border: none;
+    border-radius: 100vw;
+    padding: 10px 15px;
+}
+
+.build_btn {
+    margin-top: 15px;
+    transition: background-color 0.5s ease-in;
+}
+
+.build_unavailable {
+    cursor: default;
+    background-color: rgb(140, 140, 141);
+}
+
+#input_label {
+    display: flex;
+    align-items: center;
+    background-color: rgb(77, 197, 191);
+    overflow: hidden;
+    max-width: 20vw;
+}

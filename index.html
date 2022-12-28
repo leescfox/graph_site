@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <script src="js/logo.js" defer></script>
+    <script src="js/input.js" defer></script>
+    <title>Сайт визуализации графов</title>
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="siteTitle" id="siteTitle"><span class="blueText">E</span>asy<span class="purpleText">G</span>raph
+        </h2>
+        <ul class="headerFooterList">
+            <li class="headerFooterList_item"><a href="index.html" class="headerFooterList_link">Главная</a></li>
+            <li class="headerFooterList_item"><a href="html/contacts.html" class="headerFooterList_link">Контакты</a>
+            </li>
+            <li class="headerFooterList_item"><a href="html/aboutUs.html" class="headerFooterList_link">О нас</a></li>
+            <li class="headerFooterList_item"><a href="html/login.html"
+                    class="headerFooterList_link">Вход/Регистрация</a></li>
+        </ul>
+    </header>
+    <main class="main">
+        <div class="page_wrapper">
+            <div class="text_wrapper">
+                <h1 class="header_1">Сайт визуализации графов</h1>
+                <p>Загрузите граф в формате txt/json/xml и нажмите на кнопку "Построить граф".</p>
+                <p>Инструкции по формату представления данных даны ниже.</p>
+            </div>
+            <div class="input_button_wrapper">
+                <label for="file_input" class="btn" id="input_label">
+                    <svg class="download_svg">
+                        <path
+                            d="M10 0 4.8 4.9h3.3V10h3.8V4.9h3.3L10 0zm9.3 11.5-3.2-2.1h-2l3.4 2.6H14c-.1 0-.2.1-.2.1l-.8 2.3H7l-.8-2.2c-.1-.1-.1-.2-.2-.2H2.4l3.4-2.6h-2L.6 11.5c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9L20 13c.1-.5-.2-1.2-.7-1.5z" />
+                    </svg>
+                    <span id="input_status">Загрузить граф</span>
+                    <input id="file_input" type="file" accept=".json,.txt,.xml">
+                </label>
+                <button class="btn build_btn build_unavailable">Построить граф</button>
+            </div>
+            <div class="text_wrapper">
+                <h2 class="header_2">Представление данных в формате txt/json:</h2>
+                <p>{"nodes":[{"name": "A", "data": "a"},{"name": "B", "data": "b"},{"name": "C", "data":
+                    "c"}],
+                </p>
+                <p>"connections":[["A", "B"],["B","C"],["A","C"]]}</p>
+                <p>Программа принимает объект с ключами "nodes" и "connections".</p>
+                <p>"nodes" - массив объектов, состоящих из "name" и "data" - название узла и данные в нём.</p>
+                <p>"connections" - массив, в каждом элементе которого находится массив, состоящий из двух соединённых
+                    узлов.
+                </p>
+                <h2 class="header_2">Представление данных в формате xml:</h2>
+                <div class="pre_and_description_wrapper">
+                    <pre class="pre">
+    &lt;graph&gt;
+        &lt;nodes&gt;
+            &lt;node&gt;
+                &lt;name&gt;A&lt;/name&gt;
+                &lt;data&gt;a&lt;/data&gt;
+            &lt;/node&gt;
+            &lt;node&gt;
+                &lt;name&gt;B&lt;/name&gt;
+                &lt;data&gt;b&lt;/data&gt;
+            &lt;/node&gt;
+            &lt;node&gt;
+                &lt;name&gt;C&lt;/name&gt;
+                &lt;data&gt;c&lt;/data&gt;
+            &lt;/node&gt;
+        &lt;/nodes&gt;
+        &lt;connections&gt;
+            &lt;connection&gt;
+                &lt;point&gt;A&lt;/point&gt;
+                &lt;point&gt;B&lt;/point&gt;
+            &lt;/connection&gt;
+            &lt;connection&gt;
+                &lt;point&gt;B&lt;/point&gt;
+                &lt;point&gt;C&lt;/point&gt;
+            &lt;/connection&gt;
+            &lt;connection&gt;
+                &lt;point&gt;A&lt;/point&gt;
+                &lt;point&gt;C&lt;/point&gt;
+            &lt;/connection&gt;
+        &lt;/connections&gt;
+    &lt;/graph&gt;
+                    </pre>
+                    <div class="xml_description">
+                        <p>В теге "graph" находятся теги "nodes" и "connections".</p>
+                        <p>К каждом из тегов "nodes" находятся теги "node".</p>
+                        <p>В каждом из них в тегах "name" и "data" указаны название узла и данные в нём.</p>
+                        <p>К каждом из тегов "connections" находятся теги "connection".</p>
+                        <p>В каждом из них в двух тегах "point" указаны две соединённые вершины.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <ul class="headerFooterList">
+            <li class="headerFooterList_item"><a href="#" class="headerFooterList_link">Поддержать нас</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
